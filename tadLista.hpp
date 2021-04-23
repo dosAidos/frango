@@ -1,6 +1,6 @@
 
-#ifndef TADLISTA_H_
-#define TADLISTA_H_
+#ifndef TADLISTA_HPP_
+#define TADLISTA_HPP_
 
 template <class Elem>
 
@@ -60,4 +60,4 @@ class tadLista{//implementação da lista
 	 }
  };
 
-#endif /* TADLISTA_H_ */
+#endif /* TADLISTA_HPP_ */

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <algorithm>
 
-#include "Mon.h"
-#include "tadLista.h"
+#include "Mon.hpp"
+#include "tadLista.hpp"
 
 #ifndef POLI_H
 #define POLI_H

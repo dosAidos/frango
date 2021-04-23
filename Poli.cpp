@@ -2,8 +2,8 @@
 #include<algorithm>
 using namespace std;
 
-#include "Mon.h"
-#include "Poli.h"
+#include "Mon.hpp"
+#include "Poli.hpp"
 
 //Contrutor
 Poli::Poli(){
