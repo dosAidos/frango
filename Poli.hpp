@@ -1,26 +1,24 @@
 #include <iostream>
 #include <algorithm>
 
-#include "Mon.hpp"
-#include "tadLista.hpp"
+#include "LinkedList.hpp"
+#include "Mono.hpp"
 
 #ifndef POLI_H
 #define POLI_H
 
 using namespace std;
 
-class Poli{
-private:
-	int graumax;
-	tadLista<Mon> L;
+class Poli: public LinkedList<Mono>{
 public:
-    Poli();
-	void atgrau(int);
-	void admono(int, double);
-	void cria(int);
-	Poli add(Poli, Poli);
-	Poli sub(Poli, Poli);
-	Poli prod(Poli, Poli);
-	void ver();
+	Poli();
+	unsigned int getDgr();
+	bool empty();
+	void addMono(Mono m);
+	Poli operator-();
+	Poli operator+(const Poli* other);
+//	Poli operator-(const Poli* other);
+	Poli operator*(const Poli* other);
+	friend ostream& operator<<(ostream& os, const Poli& p);
 };
 #endif
